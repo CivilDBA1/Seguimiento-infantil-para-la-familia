@@ -1,0 +1,22 @@
+MI PEQUEÑO — PWA inicial
+
+CONTENIDO
+- index.html: aplicación responsive e interactiva.
+- manifest.webmanifest e icon.svg: instalación como app.
+- sw.js: caché offline del shell de la app.
+
+IMPORTANTE PARA INSTALAR
+La PWA debe publicarse en un alojamiento HTTPS (por ejemplo, un hosting estático). Abrir index.html directamente como archivo local permite probar la interfaz, pero no activa la instalación PWA ni el service worker.
+
+DATOS Y PRIVACIDAD
+Los registros se guardan en localStorage del navegador de este teléfono. No hay servidor ni sincronización automática entre padres. Exporta periódicamente el JSON; el archivo incluye fotos si se adjuntaron. Los datos de salud infantil son sensibles: protege el teléfono y no compartas exportaciones con terceros no autorizados.
+
+PRUEBAS RECOMENDADAS ANTES DE USO REAL
+1. Crear una revisión con y sin temperatura.
+2. Seleccionar varios síntomas y exposiciones.
+3. Añadir una foto menor de 5 MB.
+4. Exportar JSON, limpiar solo datos de prueba e importar el JSON.
+5. Preparar informe e imprimir/guardar PDF.
+6. Probar la PWA publicada por HTTPS en Android y iPhone.
+
+Esta app registra observaciones; no diagnostica ni recomienda dosis o tratamientos. Ante señales de alarma, buscar atención médica sin esperar a terminar el formulario.
